@@ -1,0 +1,21 @@
+import './Category.css'
+
+import React from 'react';
+
+const Category = ({categoryName,imgUrl,numberOfItems,bgColor,isSelected,onClick}) => {
+    return (
+        <div className="d-flex align-items-center p-2 rounded gap-2 position-relative category-hover"
+        style={{backgroundColor:bgColor,cursor:'pointer'}} onClick={onClick}>
+            <div style={{position:"relative",marginRight:"15px"}}>
+                <img src={imgUrl} alt="" className="category-image-one"/>
+            </div>
+            <div>
+                <h6 className="text-white mb-0">{categoryName}</h6>
+                <p className="text-white mb-0">{numberOfItems}</p>
+            </div>
+            {isSelected && <div className="active-category"></div>}
+        </div>
+    );
+};
+
+export default Category;

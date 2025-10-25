@@ -1,0 +1,53 @@
+/* Navbar background and link styles */
+/*.navbar {*/
+/*    background-color: #000 !important;*/
+/*}*/
+
+/* Menubar.css */
+.navbar {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    min-height: 40px !important; /* You can go as low as 36px */
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+
+.navbar-brand img {
+    height: 32px;
+    width: 32px;
+}
+
+
+.navbar-nav .nav-link{
+    color: #c1b9b9 ;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* Mobile view spacing */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding: 1rem !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 0.6rem; /* Adjust as needed */
+    }
+
+}
